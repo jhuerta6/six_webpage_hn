@@ -68,36 +68,51 @@
 
           </div>
         </div>
-        <!-- end navbar-->
-        <!--videos-->
-        <div class="row">
-          <div class="col s3 center-align">
-            <img class="responsive-img" style="width: 250px; height: 400px;" src="http://tutorial45.com/wp-content/uploads/2015/06/3d-rectangle2.png?x61285">
+      </div>
+      <!-- end navbar-->
+      <!--videos-->
+      <div class="row">
+        <div class="col s3 center-align">
+          <img class="responsive-img" style="width: 250px; height: 400px;" src="http://tutorial45.com/wp-content/uploads/2015/06/3d-rectangle2.png?x61285">
+        </div>
+        <div class="col s3 center-align">
+          <img class="responsive-img" style="width: 250px; height: 400px;" src="http://tutorial45.com/wp-content/uploads/2015/06/3d-rectangle2.png?x61285">
+        </div>
+        <div class="col s3 center-align">
+          <img class="responsive-img" style="width: 250px; height: 400px;" src="http://tutorial45.com/wp-content/uploads/2015/06/3d-rectangle2.png?x61285">
+        </div>
+        <div class="col s3 center-align">
+          <img class="responsive-img" style="width: 250px; height: 400px;" src="http://tutorial45.com/wp-content/uploads/2015/06/3d-rectangle2.png?x61285">
+        </div>
+      </div>
+      <!-- end videos-->
+
+      <div class="row">
+        <div class="col s8">
+          <div class="row">
+            <p> lo nuevo </p>
           </div>
-          <div class="col s3 center-align">
-            <img class="responsive-img" style="width: 250px; height: 400px;" src="http://tutorial45.com/wp-content/uploads/2015/06/3d-rectangle2.png?x61285">
-          </div>
-          <div class="col s3 center-align">
-            <img class="responsive-img" style="width: 250px; height: 400px;" src="http://tutorial45.com/wp-content/uploads/2015/06/3d-rectangle2.png?x61285">
-          </div>
-          <div class="col s3 center-align">
-            <img class="responsive-img" style="width: 250px; height: 400px;" src="http://tutorial45.com/wp-content/uploads/2015/06/3d-rectangle2.png?x61285">
+          <div class="row">
+            <p> haz el cambio </p>
           </div>
         </div>
-        <!-- end videos-->
-      </div>
-      <!--<div class="container"> -->
-    </body>
+        <div class="col s3">
+          <p> facebook </p>
+        </div>
 
-    <script>
-    $(document).ready(function(){
-      $('ul.tabs').tabs();
-      $(".button-collapse").sideNav();
+    </div>
+    <!--<div class="container"> -->
+  </body>
 
-    });
-    </script>
+  <script>
+  $(document).ready(function(){
+    $('ul.tabs').tabs();
+    $(".button-collapse").sideNav();
 
-  </main>
-  <footer>
-  </footer>
-  </html>
+  });
+  </script>
+
+</main>
+<footer>
+</footer>
+</html>
