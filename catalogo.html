@@ -8,6 +8,14 @@
   <meta name="author" content="">
   <title>Starter Template for Bootstrap</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+  .page {
+    display: none;
+  }
+  .page-active {
+    display: block;
+  }
+  </style>
 </head>
 
 <header>
@@ -151,24 +159,27 @@
             <div class="tab-pane fade" id="Deportiva" role="tabpanel" aria-labelledby="profile-tab">
               !
               <nav aria-label="Page navigation example text-center">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+                <ul id="pagination_deportiva" class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#1">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#2">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#3">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+                <p id="deportiva1" class="page"> 1 </p>
+                <p id="deportiva2" class="page"> 2 </p>
+                <p id="deportiva3" class="page"> 3 </p>
+              </nav>
             </div>
             <div class="tab-pane fade" id="Articulos" role="tabpanel" aria-labelledby="profile-tab">
               ?
@@ -181,86 +192,93 @@
 
 
     <!--<div class="row">
-      <nav class="col-sm-2 nav nav-pills flex-column bg-secondary sidebar">
-        <a class="nav-link active" href="#">Active</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Disabled</a>
-      </nav>
+    <nav class="col-sm-2 nav nav-pills flex-column bg-secondary sidebar">
+    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Disabled</a>
+  </nav>
 
-      <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar"  style="color: black;">
-        <ul class="nav nav-pills flex-column" style="color: black; background-color: #fcd900;">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Reports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Analytics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Export</a>
-          </li>
-        </ul>
+  <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar"  style="color: black;">
+  <ul class="nav nav-pills flex-column" style="color: black; background-color: #fcd900;">
+  <li class="nav-item">
+  <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Reports</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Analytics</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Export</a>
+</li>
+</ul>
 
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nav item</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nav item again</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">One more nav</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Another nav item</a>
-          </li>
-        </ul>
+<ul class="nav nav-pills flex-column">
+<li class="nav-item">
+<a class="nav-link" href="#">Nav item</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Nav item again</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">One more nav</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Another nav item</a>
+</li>
+</ul>
 
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nav item again</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">One more nav</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Another nav item</a>
-          </li>
-        </ul>
-      </nav>
+<ul class="nav nav-pills flex-column">
+<li class="nav-item">
+<a class="nav-link" href="#">Nav item again</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">One more nav</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Another nav item</a>
+</li>
+</ul>
+</nav>
 
-    </div>-->
-  </main><!-- /.container -->
+</div>-->
+</main><!-- /.container -->
 
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
-  <script>
-  $( document ).ready(function() {
-    $('.carousel').carousel({
-      interval: 2000
-    });
-    $('#myTab nuevo-tab, popular-tab').on('click', function (e) {
-      e.preventDefault()
-      $(this).tab('show')
-    })
+<script>
+$( document ).ready(function() {
+  $('.carousel').carousel({
+    interval: 2000
   });
-  </script>
+  $('#myTab nuevo-tab, popular-tab').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  });
+
+  $('#pagination_deportiva').on('click', function(e){
+    $( "#deportiva11,#deportiva2,#deportiva3").addClass( "page" );
+    var x = e.target.innerHTML;
+    $( "#deportiva"+x).removeClass( "page" ).addClass( "page-active" );
+  });
+
+});
+</script>
 </body><br>
 <footer class="footer bg-secondary">
   <div class="container">
