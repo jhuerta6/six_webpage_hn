@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Starter Template for Bootstrap</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+  .page {
+    display: none;
+  }
+  .page-active {
+    display: block;
+  }
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+  </style>
+</head>
+
+<header>
+  <div class="container">
+    <div class="row bg-dark text-white" style="">
+      <div class="col col-lg-10">
+        <span><i class="d-none d-sm-inline material-icons">phone</i> <span class="d-none d-sm-inline text-muted">Llamanos:</span> (656) 456-7890</span>
+      </div>
+      <div class="col col-lg-2 text-right">
+        <a class="text-white" href="contacto.html"> Contacto </a>
+      </div>
+    </div>
+  </div><br>
+</header>
+<body>
+
+  <main role="main" class="container">
+    <div class="container">
+      <div class="row">
+        <div class="text-center col">
+          <img class="img-fluid" src="./res/Six.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text-center col">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="catalogo.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Catalogo
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="catalogo.html">Chopper</a>
+                    <a class="dropdown-item" href="catalogo.html">Deportiva</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="catalogo.html">Articulos</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row alignment-center text-center">
+        <div class="col-sm-12">
+          <h3>¡Visitanos!</h3>
+          <div id="map"></div>
+        </div>
+        <!--<div class="col-sm-12">
+
+        </div>
+        <div class="col-sm-6">
+          <h3> Six Speed </h3>
+          <p class="text-muted"><em>Los mejores motocicletas.</em></p>
+          <p>Con nosotros encontrarás todo tipo de motocicletas, nacionales y de importación, y articulos.</p>
+        </div>-->
+        <div class="col-sm-6">
+            <h3>¡Escribenos!</h3>
+            <p class="text-muted"><em>Tus comentarios siempre seran prioridad.</em></p>
+            <p>Envianos un correo a six@gmail.com</p>
+        </div>
+        <div class="col-sm-6">
+          <h3>¡Llámanos!</h3>
+          <p class="text-muted"><em>Nuestro objetivo es ofrecerte el mejor y más rápido servicio.</em></p>
+          <p>Telefono celular: (656) 617-1414</p>
+        </div>
+        <div class="col-sm-12">
+          <h3>Nuestra Dirección</h3>
+          <p>Nos encontramos en la calle XYZ #X-X, cercas del Z lugar </p>
+        </div>
+      </div>
+    </div>
+
+  </main><!-- /.container -->
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrLFkq6BDtrg6ricUwbV-0MCBa1xzAUQY&callback=initMap"async defer></script>
+
+  <script>
+  $( document ).ready(function() {
+
+
+  });
+  function initMap() {
+    var myLatLng = {lat: 31.736444, lng: -106.460842};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      zoom: 15
+    });
+    var marker = new google.maps.Marker({
+      map: map,
+      position: myLatLng,
+      title: 'Six Speed'
+    });
+  }
+  </script>
+</body><br>
+<footer class="footer bg-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-right">
+        <a href="http://www.facebook.com/sixspeed"  target="_blank" class="text-right text-white"><strong> Siguenos en Facebook</strong> <i class="small material-icons">thumb_up</i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<footer class="footer bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center text-white">
+        <dl>
+          <dt><strong>Catalogo</strong></dt>
+          <dd><a href="#" class="text-white">Chopper</a></dd>
+          <dd><a href="#" class="text-white">Deportiva</a></dd>
+          <dd><a href="#" class="text-white">Articulos</a></dd>
+        </dl>
+      </div>
+      <div class="col text-center text-white border border-white">
+        <dl>
+          <dt><strong>Informacion</strong></dt>
+          <dd><h9 href="#" class="text-white"><i class="small material-icons">location_on</i>&nbsp;Potrero de mapúla #11917</h9></dd>
+          <dd><p href="#" class="text-white"><i class="small material-icons">phone</i>&nbsp;(656)123-4567</p></dd>
+          <dd><p href="#" class="text-white"><i class="small material-icons">email</i>&nbsp;six@gmail.com</p></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
